@@ -168,7 +168,6 @@ eslint-plugin-prettier                     3.0.1   →    3.1.0
 ### Major styling changes
 - `src/assets/jss/material-kit-react/components/headerStyle.jsx`
 - `src/assets/jss/material-kit-react/components/snackbarContentStyle.jsx`
-- `src/assets/jss/material-kit-react/views/loginPage.jsx`
 - `src/assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx`
 - `src/assets/scss/plugins/_plugin-nouislider.scss`
 ### Deleted dependencies
@@ -204,7 +203,6 @@ eslint-plugin-prettier                     3.0.1   →    3.1.0
   - `src/assets/jss/material-kit-react/components/customDropdownStyle.jsx`
   - `src/assets/jss/material-kit-react/components/headerLinksStyle.jsx`
   - `src/assets/jss/material-kit-react/components/headerStyle.jsx`
-  - `src/assets/jss/material-kit-react/views/loginPage.jsx`
 ### Dropped components
 - No more use of `react-popper`, no it's beeing used `@material-ui/core/Popper` instead (see `CustomDropdown`)
 ### Deleted dependencies
