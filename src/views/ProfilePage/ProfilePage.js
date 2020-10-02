@@ -1,22 +1,16 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
-// core components
 import Header from "components/Header/Header.js";
 import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
-
-import profile from "assets/img/faces/christian.jpg";
-
+import profile from "assets/img/faces/anees.jpg";
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
@@ -29,6 +23,11 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import SectionCarousel from "views/Components/Sections/SectionCarousel";
+import SectionTabs from "views/Components/Sections/SectionTabs";
+import SectionPills from "views/Components/Sections/SectionPills";
+import WorkSection from "views/LandingPage/Sections/WorkSection";
+import SectionDownload from "views/Components/Sections/SectionDownload";
 
 const useStyles = makeStyles(styles);
 
@@ -45,7 +44,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit React"
+        brand="ANEES AHMAD"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -64,8 +63,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Anees Ahmad</h3>
+                    <h6>SOFTWARE DEVELOPER</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -81,10 +80,9 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+              A self-motivated IT professional with huge knowledge and proficiency in 
+              JavaScript, HTML, CSS, and mobile responsive web development, 
+              as well as strong skills and ability in writing clean and efficient code.{" "}
               </p>
             </div>
             <GridContainer justify="center">
@@ -205,6 +203,11 @@ export default function ProfilePage(props) {
             </GridContainer>
           </div>
         </div>
+        <SectionCarousel />
+        <SectionTabs />
+        <SectionPills />
+        <WorkSection />
+        <SectionDownload />
       </div>
     </div>
   );
