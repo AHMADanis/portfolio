@@ -33,18 +33,12 @@ export default function Components(props) {
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Web & Mobile Apps Developer</h1>
-                {/* <h3 className={classes.subtitle}>
-                  Hello, I'm Anees Ahmad. I'm a full-stack web and mobile application developer
-                </h3> */}
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
           <ProfilePage />
-      {/* <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionCarousel />
-      </div> */}
       <Footer />
     </div>
   );
